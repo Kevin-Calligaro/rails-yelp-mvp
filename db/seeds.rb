@@ -19,5 +19,14 @@ puts 'Creating fake restaurants...'
     category: ["chinese", "italian", "japanese", "french", "belgian" ].sample,
   )
   restaurant.save!
+
+puts 'Creating fake reviews...'
+  rand(0..5).times do
+    review = Review.create!(
+      content: Faker::ChuckNorris.fact,
+      rating: rand(1..5),
+      restaurant: restaurant
+    )
+  end
 end
 puts 'Finished!'

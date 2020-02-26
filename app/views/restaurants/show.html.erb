@@ -4,3 +4,5 @@
 <p>Phone Number: <%= @restaurant.phone_number %></p>
 <p>Category: <%= @restaurant.category%></p>
 
+<%= render 'reviews/index', reviews: @restaurant.reviews %>
+<%= render 'reviews/new' %>
