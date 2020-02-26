@@ -1,0 +1,14 @@
+<h1 class="p-3">Restaurants</h1>
+
+<div class="shadow mb-5 bg-white rounded">
+  <% @restaurants.each do |restaurant| %>
+    <div class="border-bottom py-2 px-3">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <%= link_to restaurant.name, restaurant_path(restaurant), class: 'font-weight-bolder text-dark' %>
+          <div><%=restaurant.category %></div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
