@@ -31,6 +31,15 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# DEPENDABOT
+gem "rack", ">= 2.2.3"
+gem "websocket-extensions", ">= 0.1.5"
+gem "activesupport", ">= 5.2.4.3"
+gem "actionpack", ">= 5.2.4.3"
+gem "activestorage", ">= 5.2.4.3"
+gem "actionview", ">= 5.2.4.2"
+
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
